@@ -1,0 +1,33 @@
+- Absraction 
+    - refers to the set of concepts that some entity
+    provides (or exposes) for achieving a tassk or solve a problem
+
+- Encapsulation
+    - refers to a est of language-level mechanisms or design 
+    techniquess that hide implementataion details of a class,
+    module, or subsystem from other classes, modules
+    and subsystems
+
+
+- Levels of Requirements ("The V")
+    - on slides
+
+- a common problem with code de
+
+- Cohesion
+    - cohesion refers to "how closely the operations in in a routine are related"
+        - i.e. we want this one thhing to do one thhing
+
+
+- Coupling
+    - Coupling refers to "the strength of a connection between two routines"
+    - it is a complement to cohesion
+
+
+- in object oriented
+    - you expect the other entities to be self sufficient
+    - you give very general instructions
+    - you expect the other entities to know how to apply those general instructions
+    to their specific situation
+    - it will be easier to add special cases by adding other independent entities
+    
