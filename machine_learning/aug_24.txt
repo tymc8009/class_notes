@@ -1,0 +1,27 @@
+- classifier = will label something automatically
+
+The Learning Problem
+    - image size 28 x 28 = 784 pixels, each pixel is in gray scale
+    - unfold each image into a vector of length 784
+    - now we have vectors in 784-euclidan space:
+
+        data space X = {0,1,...,255}
+
+    - each image comes with a label, which is a digit that matches the number written down
+
+    - input space X = {1,2,...,255}^784
+    - output space Y = {1,2,...,9}
+
+    training set --> learning algorithm --> classifier      
+     (x,y),...(x,y)
+        n = 20000                                        f:X->Y
+
+    - How we measure if is is good: use a test set
+        - in this example there is a test set with 100 instances of eachh digit 
+
+
+Nearest Neighbor Algorithm
+
+
+
+
