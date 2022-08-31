@@ -1,0 +1,83 @@
+- The learning Problem  
+    input space X: {0,1,....,255}^784
+    output space y: {0,1,...,9}
+
+    Training set ---> Learning algorithm ---> classifier    
+    (x1,y1),(xn,yn)                            f: X -> y
+    n = 20000
+
+- to measure how good the classifier is, we have to use a test set
+    - we have a test set with 100 instances of each digit. 
+
+
+f = search engine + entire training set
+f = classifier
+- To calssify a new unlabeled image:  
+    - find its nearest neighbor in the database (training set)
+      and return that label
+
+
+- Reference slidess for Euclidean distance in high dimesion
+
+
+- error rate generally relates to test set 
+
+- error rate for random guessing is 90% in this example
+
+
+- KNN
+    - to classify X, find its k nearest neighbors and return their majority vote
+    - if not accurate, can always compare to more neighbors
+
+
+Time Complexity
+- To classify a new unlabled image, 
+    find its nearest neighbor in the training set and return that label
+
+- Given n training points in R^d, what is the time Complexity
+to label a new image, q?
+    - O(n)
+
+Nearest Neighbor
+- Pros
+    - simple 
+    - flexible
+    - excellent performance on a wide range of tasks
+
+
+Cons
+    - algorithmic
+        - time consuming: with n training points, in R^d, 
+    - statistical
+        - ...
+
+- Beyond Simple Nearest Neighbor
+Goal: Design algorithms to perform nearest neighbor classification
+    - with low error
+    - with something else
+
+
+- Prototype selection
+    - instead of the entire training set, just keep a 
+        "representative sample"
+
+How to pick prototypes:
+    - idea: sample uniformly at random from training data
+    - idea: one training point per calss: mean of training points
+        - note: they do not have to be actual data points
+    - idea: limit the query time using a "neighborhood graph"
+        - node = training point
+        - edges = connect to close neighbors (small distance)
+
+        - then use the graph to guide the selection of prototypes
+
+
+Speeding up nearest neighbor:
+    - locality-sensitive hashing (LSH)
+    - K-d trees 
+    - ball trees
+
+
+Generalization
+    - the simplest (most compact) classifiers generalize the best 
+    
